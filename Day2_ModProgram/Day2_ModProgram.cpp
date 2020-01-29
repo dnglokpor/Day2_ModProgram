@@ -3,10 +3,24 @@
 
 #include <iostream>
 
+// Get the min value of two integers
+int GetMinValue(int valueA, int valueB)
+{
+    if (valueA < valueB) { // valueA is the min
+        return valueA;
+    }
+    else { // valueB is min or equal to valueA
+        return valueB;
+    }
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    // std::cout << "Hello World!\n";
+    int a = 400;
+    int b = 220;
 
+    std::cout << "Min Value: " << GetMinValue(a, b) << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
